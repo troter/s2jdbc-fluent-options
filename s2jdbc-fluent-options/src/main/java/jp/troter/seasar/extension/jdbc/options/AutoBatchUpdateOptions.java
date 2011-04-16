@@ -6,6 +6,14 @@ import java.util.Set;
 import org.seasar.extension.jdbc.AutoBatchUpdate;
 import org.seasar.framework.util.tiger.CollectionsUtil;
 
+/**
+ * SQLを自動生成するバッチ更新のためのOptionsです。<br>
+ * <p>
+ * includes, excludesなどのメソッドは引数を蓄積します。
+ * </p>
+ * @param <T>
+ *            エンティティの型です。
+ */
 public class AutoBatchUpdateOptions<T> extends
         AbstractAutoBatchUpdateOptions<T, AutoBatchUpdate<T>> implements
         AutoBatchUpdate<T> {
