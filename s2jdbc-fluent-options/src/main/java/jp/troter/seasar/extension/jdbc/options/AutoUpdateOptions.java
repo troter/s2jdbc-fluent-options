@@ -7,6 +7,14 @@ import java.util.Set;
 import org.seasar.extension.jdbc.AutoUpdate;
 import org.seasar.framework.util.tiger.CollectionsUtil;
 
+/**
+ * SQLを自動生成する更新のためのOptionsです。<br>
+ * <p>
+ * includes, excludesなどのメソッドは引数を蓄積します。
+ * </p>
+ * @param <T>
+ *            エンティティの型です。
+ */
 public class AutoUpdateOptions<T> extends AbstractAutoUpdateOptions<T, AutoUpdate<T>>
         implements AutoUpdate<T> {
 
