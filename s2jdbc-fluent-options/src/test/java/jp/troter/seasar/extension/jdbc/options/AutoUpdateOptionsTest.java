@@ -51,7 +51,6 @@ public class AutoUpdateOptionsTest {
 
     @Test
     public void smoke() {
-
         s.callerClass(Entity.class);
         s.callerMethodName("callerMethodName");
         s.queryTimeout(10);
