@@ -31,6 +31,7 @@ public class AutoBatchInsertOptionsTest {
         expect(applied.callerClass(Entity.class)).andReturn(applied);
         expect(applied.callerMethodName("callerMethodName")).andReturn(applied);
         expect(applied.queryTimeout(10)).andReturn(applied);
+        expect(applied.batchSize(100)).andReturn(applied);
         expect(applied.includes("one", "two", "three", "four", "five")).andReturn(applied);
         expect(applied.excludes("six", "seven", "eight", "nine", "ten")).andReturn(applied);
         expect(applied.execute()).andReturn(new int[0]);
@@ -41,6 +42,7 @@ public class AutoBatchInsertOptionsTest {
         s.callerClass(Entity.class);
         s.callerMethodName("callerMethodName");
         s.queryTimeout(10);
+        s.batchSize(100);
         s.includes("one", "two", "three"); s.includes("four", "five");
         s.excludes("six", "seven"); s.excludes("eight", "nine", "ten");
 
