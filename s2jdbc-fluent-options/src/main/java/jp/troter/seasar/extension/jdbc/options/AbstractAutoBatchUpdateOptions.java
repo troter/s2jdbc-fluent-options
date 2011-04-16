@@ -2,7 +2,7 @@ package jp.troter.seasar.extension.jdbc.options;
 
 import org.seasar.extension.jdbc.BatchUpdate;
 
-public class AbstractAutoBatchUpdateOptions<T, S extends BatchUpdate<S>> extends AbstractQueryOptions<S>
+public abstract class AbstractAutoBatchUpdateOptions<T, S extends BatchUpdate<S>> extends AbstractQueryOptions<S>
         implements BatchUpdate<S> {
 
     protected int batchSize;
