@@ -15,7 +15,7 @@ public class AutoUpdateOptions<T> extends AbstractAutoUpdateOptions<T, AutoUpdat
 
     /** excludesNullの適応が必要か */
     protected boolean isNeedApplyExcludesNull = false;
-    
+
     protected Set<CharSequence> includes = CollectionsUtil.newLinkedHashSet();
 
     protected Set<CharSequence> excludes = CollectionsUtil.newLinkedHashSet();

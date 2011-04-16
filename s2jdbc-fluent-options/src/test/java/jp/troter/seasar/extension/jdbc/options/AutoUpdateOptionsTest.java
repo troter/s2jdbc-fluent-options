@@ -17,7 +17,7 @@ import org.seasar.framework.util.tiger.CollectionsUtil;
 public class AutoUpdateOptionsTest {
 
     public static class Entity {}
-    
+
     AutoUpdateOptions<Entity> s;
     AutoUpdateOptions<Entity> o;
 
